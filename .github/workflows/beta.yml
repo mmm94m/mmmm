@@ -34,7 +34,14 @@ jobs:
 
       - name: Build
         run: |
-          make
+          set -o pipefail
+          make 2>&1 | tee build.log
+
+      - name: Show build errors
+        if: failure()
+        run: |
+          echo "=========== ERRORS ==========="
+          grep -E "error:|: error|The following build commands failed|Failed to build|failed with a nonzero" -A3 build.log | head -120 || true
 
       - name: Update Beta Release
         env:
