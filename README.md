@@ -1,11 +1,11 @@
 
 <img src="https://raw.githubusercontent.com/NovaDev404/NexStore-new/main/NexStore/Resources/Assets.xcassets/AppIcon.appiconset/NexStore-default.png" height="200">
 
-# NexStore v2 
+# AshteMobile v2 
 [![GitHub Release](https://img.shields.io/github/v/release/NovaDev404/NexStore-new?style=for-the-badge&color=3c94fc)](https://github.com/NovaDev404/NexStore-new/releases/latest) 
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/NovaDev404/NexStore-new/total?style=for-the-badge&color=6bc563)](https://github.com/NovaDev404/NexStore-new/releases)
 
-This is a WIP version of NexStore, forked from Ksign.
+This is a WIP version of AshteMobile, forked from Ksign.
 
 ## Why?
 Since Esign is end of service so people been moving to other signing apps, but Esign was a really big part of the community, so with the help of Feather as the base app, I tried to recreate Esign as close as possible so you guys can easier to get familiar and less app switching for smooth sideloading.
@@ -15,7 +15,7 @@ Another reason is this app was built specifically for Khoindvn to share his cert
 ## Help
 You can create your Issue at [Issue](https://github.com/NovaDev404/NexStore-new/issues), this will also be the place for you to request a new feature so feel free to make one!
 
-You can also join NexStore Discord [here](https://discord.gg/sfbZfQzVdQ) for better communication.
+You can also join AshteMobile Discord [here](https://discord.gg/sfbZfQzVdQ) for better communication.
 
 ## Download
 Go to [Releases](https://github.com/NovaDev404/NexStore-new/releases) and download the newest ipa from there.
@@ -31,8 +31,9 @@ Go to [Releases](https://github.com/NovaDev404/NexStore-new/releases) and downlo
 </a>
 
 ## Credits
-- Ksign by [Nyasami](https://github.com/Nyasami/Ksign)  
-- Feather by [Claration](https://github.com/claration/Feather)  
+- [Ksign](https://github.com/Nyasami/Ksign) by Nyasami
+- [Feather](https://github.com/claration/Feather) by Claration
+- [StosSign](https://github.com/Stossy11/StosSign) by Stossy11 (Original [AltSign](https://github.com/rileytestut/AltSign) by Riley Testut)  
 
 ## Disclaimer
 

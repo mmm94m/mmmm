@@ -1,8 +1,8 @@
 {
-    "name": "NexStore Repository",
+    "name": "AshteMobile Repository",
     "identifier": "novadev.nexstore-repo",
-    "subtitle": "A source for NexStore app",
-    "description": "This is a AltStore source for NexStore",
+    "subtitle": "A source for AshteMobile app",
+    "description": "This is a AltStore source for AshteMobile",
     "iconURL": "https://github.com/NovaDev404/NexStore/blob/main/NexStore/Resources/AppIcons/nexstore_icon.png?raw=true",
     "website": "https://github.com/NovaDev404/NexStore",
     "tintColor": "3c94fc",
