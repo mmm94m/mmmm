@@ -21,7 +21,7 @@ struct TabbarView: View {
 						.tag(tab)
 				}
 			}
-			.tabViewStyle(.page(indexDisplayMode: .never))
+			.toolbar(.hidden, for: .tabBar)
 			.padding(.bottom, 100)
 
 			// Custom bottom tab bar

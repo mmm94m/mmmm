@@ -20,14 +20,10 @@ public struct NBNavigationView<Content>: View where Content: View {
 	}
 	
 	public var body: some View {
-		VStack(alignment: .leading, spacing: 0) {
-			Text(_title)
-				.font(.largeTitle)
-				fontWeight(.bold)
-				.padding(.leading, 16)
-				.padding(.top, 8)
-			
+		NavigationStack {
 			_content
+				.navigationTitle(_title)
+				.navigationBarTitleDisplayMode(.large)
 		}
 	}
 }
