@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import NimbleExtensions
 
 extension UIImage {
 	static var appIcon: UIImage {
