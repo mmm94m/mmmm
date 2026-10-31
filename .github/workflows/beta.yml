@@ -21,6 +21,17 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
+      - name: Fetch dependencies (submodules)
+        run: |
+          rm -rf Zsign IDeviceKit StosSign
+          git clone --recurse-submodules --branch package https://github.com/khcrysalis/Zsign-Package Zsign
+          git clone --recurse-submodules https://github.com/khcrysalis/IDeviceKit IDeviceKit
+          git clone --recurse-submodules https://github.com/NovaDev404/StosSign StosSign
+          git -C Zsign checkout 6ffe703 || true
+          git -C IDeviceKit checkout 837cf1e || true
+          git -C StosSign checkout bcd7e5f || true
+          ls Zsign IDeviceKit StosSign | head -30
+
       - name: Build
         run: |
           make
@@ -48,7 +59,7 @@ jobs:
 
           gh release delete beta --cleanup-tag -y || true
           
-          gh release create beta "packages/NexStore.ipa" \
+          gh release create beta "packages/AshteMobile.ipa" \
             --title "Latest Beta Build" \
             --notes "$(cat release_notes.md)" \
             --prerelease \
