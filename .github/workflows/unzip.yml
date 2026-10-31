@@ -8,10 +8,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          unzip -q AshteMobile-main.zip
-          rm -rf AshteMobile-main/.github/workflows
-          cp -a AshteMobile-main/. .
-          rm -rf AshteMobile-main AshteMobile-main.zip
+          ZIP=$(ls *.zip | head -n 1)
+          echo "Using $ZIP"
+          mkdir /tmp/extracted
+          unzip -q "$ZIP" -d /tmp/extracted
+          # ئەگەر تەنها یەک فۆڵدەر لەناو زیپەکە هەبوو، ناوەڕۆکی ئەوە وەردەگرین
+          if [ "$(ls -A /tmp/extracted | wc -l)" = "1" ] && [ -d /tmp/extracted/* ]; then
+            SRC=$(echo /tmp/extracted/*)
+          else
+            SRC=/tmp/extracted
+          fi
+          rm -rf "$SRC/.github/workflows"
+          cp -a "$SRC"/. .
+          rm -f "$ZIP"
           git config user.name "bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A
